@@ -9,13 +9,20 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">16.601</td><td></td><td></td></tr>
+<tr><td><a href="#t0">TestOnEdge</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">15.084</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">TestOnChrome</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">15.295</td><td></td><td></td></tr>
+<tr><td><a href="#t2">TestOnFirefox</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">16.292</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">3</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">46.671</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">browser.MultiBrowser</td><td><a href="#m0">teardown</a></td><td rowspan="1">1644545693408</td><td rowspan="1">31</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">browser.MultiBrowser</td><td><a href="#m1">test1</a></td><td rowspan="1">1644545686515</td><td rowspan="1">6886</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TestOnEdge &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">browser.MultiBrowser</td><td><a href="#m0">test1</a></td><td rowspan="1">1644588038027</td><td rowspan="1">6798</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">TestOnChrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">browser.MultiBrowser</td><td><a href="#m1">test1</a></td><td rowspan="1">1644588036895</td><td rowspan="1">8144</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">TestOnFirefox &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">browser.MultiBrowser</td><td><a href="#m2">teardown</a></td><td rowspan="1">1644588050159</td><td rowspan="1">41</td></tr><tr><th colspan="4">TestOnFirefox &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">browser.MultiBrowser</td><td><a href="#m3">test1</a></td><td rowspan="1">1644588040733</td><td rowspan="1">9425</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">browser.MultiBrowser#teardown</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:60763/devtools/browser/036e5faf-706b-4651-a76b-53e1a156cb67
+<h2>TestOnEdge</h2><h3 id="m0">browser.MultiBrowser#test1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TestOnChrome</h2><h3 id="m1">browser.MultiBrowser#test1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TestOnFirefox</h2><h3 id="m2">browser.MultiBrowser#teardown</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:53959/devtools/browser/3697b57d-fd93-4780-b54d-1c74a4cb423e
 Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
-System info: host: &apos;LAPTOP-JML9HNE8&apos;, ip: &apos;172.31.32.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+System info: host: &apos;LAPTOP-JML9HNE8&apos;, ip: &apos;172.30.16.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
 Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:104)
 	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:137)
@@ -23,8 +30,12 @@ Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:77)
 	at org.openqa.selenium.firefox.FirefoxDriver.maybeGetDevTools(FirefoxDriver.java:310)
 	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:440)
-	at browser.MultiBrowser.teardown(MultiBrowser.java:67)
-... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">browser.MultiBrowser#test1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at browser.MultiBrowser.teardown(MultiBrowser.java:83)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">browser.MultiBrowser#test1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

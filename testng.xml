@@ -1,12 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test thread-count="5" name="Test">
-  <parameter name="browserName" value="firefox"></parameter> <!-- INGRESAR AQUI EL NAVEGADOR DESEADO -->
-    <classes>
-      <class name="browser.MultiBrowser"/>
-    </classes>
-  </test> <!-- Test -->
+<suite name="Suite" parallel="tests" thread-count="3">
+
+	<test name="TestOnChrome">
+		<parameter name="browserName" value="chrome"></parameter> <!-- INGRESAR AQUI EL NAVEGADOR DESEADO -->
+		<classes>
+			<class name="browser.MultiBrowser" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="TestOnFirefox">
+		<parameter name="browserName" value="firefox"></parameter> <!-- INGRESAR AQUI EL NAVEGADOR DESEADO -->
+		<classes>
+			<class name="browser.MultiBrowser" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="TestOnEdge">
+		<parameter name="browserName" value="edge"></parameter> <!-- INGRESAR AQUI EL NAVEGADOR DESEADO -->
+		<classes>
+			<class name="browser.MultiBrowser" />
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->
 
+
+<!-- LANZAR EJECUCION DESDE AQUI -->
+<!-- LANZAR EJECUCION DESDE AQUI -->
 <!-- LANZAR EJECUCION DESDE AQUI -->
