@@ -33,6 +33,7 @@ public class MultiBrowser {
 		} else if (browserName.equalsIgnoreCase("firefox")) {
 			System.setProperty("webdriver.gecko.driver", "src/test/resources/driver/geckodriver.exe");
 			//driver = new FirefoxDriver();
+
 			FirefoxOptions opts = new FirefoxOptions();
 			opts.addArguments("-private");
 			driver = new FirefoxDriver(opts);
